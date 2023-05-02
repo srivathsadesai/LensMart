@@ -1,0 +1,41 @@
+<div class="nav">
+  <nav>
+    &nbsp;&nbsp;<a routerLink="/Product">   Products </a>&nbsp;&nbsp;
+    <a routerLink="/mycart">   Mycart </a>&nbsp;&nbsp;
+    <a routerLink="/Orders">   Orders </a>&nbsp;&nbsp;
+    <a routerLink="/signup">   Logout </a>
+
+  </nav>
+</div>
+<h1>MY ORDERS </h1>
+<form #orderform="ngForm">
+    <div class="container row">
+        <div class="col-md-6">
+         <div class="tabdis">
+         <table class="table">
+         
+          <thead>
+          <tr>
+            <th>Order Id</th>
+            <th>Product name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th></th>
+          </tr>
+       
+          </thead>
+          <tbody>
+         <tr >
+            <td>{{newObj.orderId}}</td>
+            <td>{{newObj.productName}}</td>
+            <td>{{newObj.price}}</td>
+            <td>{{newObj.quantity}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+    </div>
+    <button class="pay" (click)="payment()" > Pay</button>
+</form>
+<router-outlet></router-outlet>

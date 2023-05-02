@@ -1,0 +1,21 @@
+<div class="main">
+<form [formGroup]="adminForm" (ngSubmit)="adminSubmit()">
+    <h3 class="login">Login</h3>
+    <hr />
+    <input type="email" placeholder="enter email" formControlName="email" />
+    <br />
+    <br>
+    <input
+      type="password"
+      name=""
+      id="password"
+      placeholder="enter password"
+      formControlName="password"
+      
+    /><br>
+    <br />
+    <button type="button" (click)="LoginadminNow()">submit</button> <br />
+    <br>
+    <p class="newUser">new user?<a routerLink="/signup">sign up</a></p>
+  </form>
+</div>

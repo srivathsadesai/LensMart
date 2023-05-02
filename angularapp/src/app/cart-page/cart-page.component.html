@@ -1,0 +1,43 @@
+<div class="nav">
+  <nav>
+    &nbsp;&nbsp;<a routerLink="/Product">   Products </a>&nbsp;&nbsp;
+    <a routerLink="/mycart">   Mycart </a>&nbsp;&nbsp;
+    <a routerLink="/Orders">   Orders </a>&nbsp;&nbsp;
+    <a routerLink="/signup">   Logout </a>
+
+  </nav>
+</div>
+<h1>MY CART
+ <span class="image">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyrQx_xmLkJk3r23Rr6yjaWgdLgznQok89qyotgEFL82XZZ4mzPp9XlshYeWvK_kTgEwQ&usqp=CAU" width="100px" height="90px"></span></h1>
+<form #cartform="ngForm">
+<div class="container row">
+    <div class="col-md-6">
+      <div class="prodtab">
+    <table class="table">
+      <thead>
+        
+      <tr>
+        <th>Product name</th>
+        <th>Price</th>
+        <th>quantity</th>
+        <th></th>
+      </tr>
+      
+      </thead>
+      <tbody>
+     <tr >
+        <td>{{prodobj.productName}}</td>
+        <td>{{prodobj.price}}</td>
+        <td>{{prodobj.quantity}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+<!-- <button type="button" (click)="ShowProducts()">Show Products</button> -->
+
+<button class="btn" type="button" (click)="placeOrder()">Place order</button>
+</form>
+<router-outlet></router-outlet>

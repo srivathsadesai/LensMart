@@ -1,0 +1,56 @@
+<h1>Admin DashBoard</h1>
+<div class="add">
+<div class="container row">
+    <div class="col-md-6">
+    <div class="tabdis">
+    <table class="table">
+      <thead>
+       
+      <tr>
+        <th>product Id</th>
+        <th>image</th>
+        <th>productName</th>
+        <th>Price</th>
+        <th>description</th>
+        <th>quantity</th>
+        <th>ops</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let p of prod">
+        <td>{{p.productId}}</td>
+        <td><img src="{{p.imageUrl}}" height="80" width="80" alt=""></td>
+        <td>{{p.productName}}</td>
+        <td>{{p.price}}</td>
+        <td>{{p.description}}</td>
+        <td>{{p.quantity}}</td>
+        <td><button (click)=deleteProd(p.productId)>Delete</button>
+        </td>
+    </tr>
+
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+
+<div class="ProductInput">
+  <form #proform="ngForm" (ngSubmit)="getProdForm(proform.value)">
+    <input type="text " ngModel name="productId" placeholder="enter id"> 
+    <br><br>
+    <input type="text " ngModel name="imageUrl" placeholder="enter imageUrl"> 
+    <br><br>
+    <input type="text " ngModel name="productName" placeholder="enter name"> 
+    <br><br>
+    <input type="text " ngModel name="price" placeholder="enter price"> 
+    <br><br>
+    <input type="text " ngModel name="description" placeholder="enter description"> 
+    <br><br>
+    <input type="text " ngModel name="quantity" placeholder="quantity"> 
+    <br><br>  
+    <button id="submitButton">Add Product</button>
+  </form>
+</div>
+
+
+</div>

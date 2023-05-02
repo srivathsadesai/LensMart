@@ -1,0 +1,23 @@
+<div class="nav">
+   <nav>
+     &nbsp;&nbsp;<a routerLink="/Product">   Products </a>&nbsp;&nbsp;
+     <a routerLink="/mycart">   Mycart </a>&nbsp;&nbsp;
+     <a routerLink="/Orders">   Orders </a>&nbsp;&nbsp;
+     <a routerLink="/signup">   Logout </a>
+ 
+   </nav>
+ </div>
+<div class="container">
+<div class="row">
+<ng-container *ngFor="let item of prod">
+<div class="card col-md-4">
+ <img src="{{item.imageUrl}}" height="120" width="150" >
+    <p id="pname"><b>{{item.productName}}</b></p>
+  <p id ="pprice">Price:${{item.price}}</p>  
+ <p id="pdecp">{{item.description}}</p>
+ <button class="btn" (click)="saveCart(item.productId)">Add to cart</button>
+    </div>
+    </ng-container>
+    </div>
+    </div>
+    <router-outlet></router-outlet>

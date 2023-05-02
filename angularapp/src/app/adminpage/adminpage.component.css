@@ -1,0 +1,55 @@
+h1{
+   background-color:#7B2869;
+   font-size: 300%;
+   align-self: center;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-display: var(#e6dee4);
+   align-content: center;
+   color:#FAF8F1;
+   text-align: center;
+   font-style: italic;
+   font-style: bold;
+   text-transform:uppercase;
+}
+
+.tabdis{
+   
+   padding-top: 50px;
+   padding-right: 0px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+   box-sizing:border-box;
+   border: 2px solid black;
+   border-radius:10px;
+   text-align: center;
+   font-family: 'Times New Roman', Times, serif;
+   color:#E7E6E1;
+   float: left;
+
+}
+
+.ProductInput{
+   float: right;
+   border: 2px solid black;
+   font-display: calc();
+   padding: 60px;
+   height: 500px;
+   margin-right: 70px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 200;
+   font-size: 100%;
+
+ }
+   
+ .add{
+   display: inline-flex;
+}
+
+
+button{
+   color: #050404;
+   text-align: calc();
+   align-content:stretch;
+   background-color:#D3756B;
+
+}

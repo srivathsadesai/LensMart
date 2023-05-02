@@ -1,0 +1,18 @@
+h1{
+    color: brown;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.adminnav{
+    background-color: #050505;
+    text-align: right;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-size: large;
+    padding-right: 10px;
+}
+

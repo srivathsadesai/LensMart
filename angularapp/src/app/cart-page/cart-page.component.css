@@ -1,0 +1,55 @@
+h1{
+    color:#FBF7F7;
+    background-color: #030303;
+     padding:10px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 300%;
+    
+    }
+    .image{
+        
+        float: right;
+        align-self: auto;
+    
+    }
+    
+    .prodtab{
+    
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    box-sizing:border-box;
+    border: 2px solid rgb(229, 222, 222);
+    border-radius:10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+    color:#FFE8D5;
+    float: left;
+    font-size: 100%;
+
+    
+    }
+    .btn{
+        border: 2px solid black;
+        float: right;
+        margin-right: 100px;
+        border-radius: 6px;
+        height: 50%; 
+        padding: 15px 32px;
+        text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 180px;
+    }
+    .nav{
+        background-color: #050505;
+        text-align: left;
+        padding-top: 2px;
+        padding-bottom: 5px;
+        text-decoration: none;
+        font-size: large;
+    
+    }
